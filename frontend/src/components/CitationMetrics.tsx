@@ -119,7 +119,7 @@ export default function CitationMetrics({ papers }: CitationMetricsProps) {
       </div>
 
       {/* Top Cited Paper */}
-      {metrics.topCited && metrics.topCited.publication.citation_count > 0 && (
+      {metrics.topCited && (metrics.topCited.publication.citation_count ?? 0) > 0 && (
         <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
           <div className="flex items-start gap-2">
             <Award className="w-5 h-5 text-yellow-600 dark:text-yellow-400 flex-shrink-0 mt-0.5" />
