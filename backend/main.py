@@ -47,7 +47,7 @@ app = FastAPI(
 )
 
 # CORS middleware for frontend - configurable via environment
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(",")
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000,https://frontend-liard-three-27.vercel.app").split(",")
 
 app.add_middleware(
     CORSMiddleware,
