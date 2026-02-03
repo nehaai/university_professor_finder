@@ -5,7 +5,7 @@ const nextConfig = {
 
   // Environment variables that will be available at build time
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000',
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://uni-prof-finder-production.up.railway.app',
   },
 };
 
